@@ -1,0 +1,56 @@
+.hidden {
+  display: none;
+}
+
+
+/* Common */
+
+body {
+  background-color: hsla(30, 45%, 59%, 1.0);
+  font-size: 16px;
+}
+
+input {
+  font-size: 20px;
+  margin: 5px;
+}
+
+label {
+  font-size: 20px;
+}
+
+
+/* Table Style */
+
+table {
+  border: 3px solid #000;
+  margin-top: 25px;
+  text-align: center;
+  width: 60%;
+}
+
+th {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+td {
+  border: 1px solid #000;
+  font-size: 18px;
+}
+
+
+/* Button */
+
+.btn {
+  background-color: #fff;
+  border: 3px solid hsla(31, 31%, 21%, 1.0);
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 15px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
