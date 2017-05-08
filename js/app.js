@@ -106,6 +106,21 @@
       http.open('GET', `../data/dummy.json`, true);
       http.send();
     }
+    // pl version // in progress
+    // function getAppointments(arg) {
+    //   const http = new XMLHttpRequest();
+    //   http.onreadystatechange = function() {
+    //     if (http.readyState === 4 && http.status === 200) {
+    //       const resultData = JSON.parse(http.response);
+    //       // console.log('response', resultData);
+    //       databaseResult = resultData;
+    //       localStorage.setItem('databaseResult', JSON.stringify(databaseResult));
+    //       createTable();
+    //     }
+    //   };
+    //   http.open('GET', `../cgi-bin/test-dbi.pl`, true);
+    //   http.send();
+    // }
     ///////////////////////////////////////////
     // FUNCTION : SEARCH TABLE
     ///////////////////////////////////////////

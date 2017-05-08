@@ -9,7 +9,7 @@
  my %dispatch = (
      '/' => \&resp_welcome,
      '/home' => \&resp_home,
-     '/add' => \&resp_add,
+     '/add' => \&resp_add
     #  '/styles/app.css' => \&addCSS,
      # ...
  );
@@ -60,7 +60,7 @@ sub addCSS{
   print "body { color:blue }";
 
 }
- sub resp_about {
+ sub resp_add {
     my $cgi = shift;
     print $cgi->header,
     $cgi->start_html("is this my title"),
@@ -69,7 +69,7 @@ sub addCSS{
 
  }
 
- sub resp_hello {
+ sub resp_home {
      my $cgi  = shift;   # CGI.pm object
      return if !ref $cgi;
 
