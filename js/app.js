@@ -47,8 +47,10 @@
       }
       // push new values to Local Storage to avoid being over written for now
       let addingLS = JSON.parse(localStorage.getItem('databaseResult')) || [];
+      console.log('adding ls ', addingLS);
       addingLS.push(addValue);
       localStorage.setItem('databaseResult', JSON.stringify(addingLS));
+      console.log('ls ', localStorage.getItem('databaseResult'));
 
       clearTables();
       createTable();
@@ -65,7 +67,7 @@
         createTable();
         searchTable();
       } else {
-        getAppointments();
+        createTable();
         // console.log('no search value');
       }
       searchDataForm.reset();
